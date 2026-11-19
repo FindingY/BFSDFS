@@ -57,10 +57,10 @@ Implement `dfs(start)` in `graph.py` using **recursion**. Return a list of verti
 Suggested approach:
 
 1. Create an empty `visited` set and an empty `order` list.
-2. Define a helper function inside `dfs` that accepts a vertex.
+2. Define a stack inside `dfs` that accepts a vertex.
 3. Mark the vertex visited and append it to `order`.
-4. For each neighbor of that vertex, call the helper if that neighbor has not been visited.
-5. Call your helper on `start` and return `order`.
+4. Loop the steps while the stack is non-empty:for each neighbor of that vertex, call the helper if that neighbor has not been visited.
+
 
 **Question 3.** What prevents DFS from visiting vertices forever when a graph contains a cycle?
 
